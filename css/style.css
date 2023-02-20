@@ -65,6 +65,12 @@ h4{
 .p-bot-20{
     padding-bottom: 20px;
 }
+.p-30{
+    padding: 30px 0;
+}
+.p-top-30{
+    padding-top: 30px;
+}
 /*/Utility*/
 
 /*header*/
@@ -251,6 +257,7 @@ main{
     text-decoration: underline;
 }
 
+
 /*/call to action*/
 
 /*/main*/
@@ -258,9 +265,21 @@ main{
 /*footer*/
 footer{
     background-color: var(--bg-footer);
-    color: var(--secondary-color);
 }
-
+footer a{
+    color: var(--primary-color);
+}
+footer p{
+    font-size: .8rem;
+}
+footer a{
+    font-size: .8rem;
+ 
+}
+footer span{
+    font-size: .8rem;
+ 
+}
 /*/footer*/
 
 /*@media*/
@@ -309,6 +328,7 @@ footer{
     .d-flex{
         display: flex;
         flex-flow: row wrap;
+        align-items: flex-start;
         gap: 10px;
     }
     #intro .card{
@@ -326,11 +346,50 @@ footer{
     display: block;
     width: 50%;
 }
+    .card-about-us{
+        width: calc((100% / 2) - 10px);
+    }
+    .ptop35{
+        padding-top: 35px;
+    }
 }
-@media  screen and (min-width:992px) and (max-width:1200px) {
-        .container{
+
+@media  screen and (min-width:992px){
+    .container{
         width: 100%;
     }
+    header nav ul{
+        display: block;
+    }
+    .fa-bars{
+        display: none;
+    }
+    
+}
+@media screen  and (min-width:1200px) {
+    .container{
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .card-plan{
+        width: calc((100% / 2) - 10px);
+    }
+    .d-flex{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .self{
+        margin-top:25%;
+    }
+    .fa-bars{
+        display: none;
+    }
+    header nav ul{
+        display: block;
+    }
+
 }
 
 /*/@media*/
