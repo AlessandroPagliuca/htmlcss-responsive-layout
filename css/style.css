@@ -27,11 +27,14 @@ a{
     text-decoration: none;
 }
 h3{
-    padding: 20px 0;
+    padding: 35px 0;
     color: var(--color-blue);
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 p{
     font-weight: 400;
+    font-size: 1.2rem;
     line-height: 2rem;
     color: var(--color-text-dark);
 }
@@ -39,12 +42,14 @@ p{
 
 /*Utility*/
 .container{
-    padding: 15px;
+    padding: 20px;
 }
 
 .text-center{
     text-align: center;
 }
+
+
 /*/Utility*/
 
 /*header*/
@@ -82,8 +87,7 @@ main{
 .card{
     background-color: var(--card-color);
     border-radius: 20px;
-    margin-bottom: 1.5rem;
-    padding: 20px 20px 0 20px;
+    margin-bottom: 1.2rem;
 }
 .card-left{
     width: 50%;
@@ -99,13 +103,28 @@ main{
     display: inline-block;
     background-color: var(--color-blue);
     color: var(--secondary-color);
-    padding: 5px 40px;
+    padding: 10px 50px;
     border-radius: 25px;
     margin: 20px 0;
 }
 .icon-size{
     font-size: 80px;
     color: var(--color-blue);
+}
+.plan2{
+    background-color: var(--secondary-color);
+    border-radius: 25px;
+    text-align: center;
+    color: var(--color-text-dark);
+}
+.plan2 h3{
+    color: var(--color-text-dark);
+}
+.plan-arrow{
+    background-color: #9792e4;
+    
+    border-radius: 50%;
+
 }
 /*/main*/
 
@@ -128,8 +147,28 @@ footer{
         display: flex;
         flex-flow: column wrap;
         align-items: center;
-        gap: 10px;
     }
+    .d-start{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        
+    }
+    .p-t-r-l{
+    padding: 35px 35px 0 35px;
+}
+    .p-all-35{
+        padding: 35px;
+}
+.card-left{
+    width: 100%;
+}
+.card-right{
+    width: 100%;
+}
+#planning img{
+    width: 100%;
+}
 }
 /*/BONUS*/
 
@@ -147,9 +186,16 @@ footer{
     }
     #intro .card:first-child{
         width: calc((100% / 3 * 2) - 10px);
+        align-self: stretch;
 
     }
-    
+    #intro .card:nth-child(2){
+        align-self: stretch;
+    }
+    .card-right img{
+    display: block;
+    width: 50%;
+}
 }
 @media  screen and (min-width:992px) and (max-width:1200px) {
         .container{
