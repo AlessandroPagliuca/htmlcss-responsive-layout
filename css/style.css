@@ -32,11 +32,23 @@ h3{
     font-weight: 700;
     font-size: 1.5rem;
 }
+h2{
+    font-size: 2rem;
+}
 p{
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 2rem;
     color: var(--color-text-dark);
+}
+h4{
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    color: var(--secondary-color);
+}
+.m-20{
+    margin-top: 20px;
 }
 /*/General*/
 
@@ -111,6 +123,20 @@ main{
     font-size: 80px;
     color: var(--color-blue);
 }
+/*planning*/
+
+.plan-arrow i{
+    background-color: #9792e4;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.planning-text-white p, h2{
+    color: var(--secondary-color);
+}
 .plan2{
     background-color: var(--secondary-color);
     border-radius: 25px;
@@ -120,12 +146,40 @@ main{
 .plan2 h3{
     color: var(--color-text-dark);
 }
-.plan-arrow{
-    background-color: #9792e4;
-    
-    border-radius: 50%;
-
+.plan2-text{
+    color: var(--color-text-dark);
 }
+/*/planning*/
+
+/*testimonials*/
+#testimonials h3{
+    color: var(--color-text-dark);
+    text-transform: uppercase;
+    text-align: center;
+}
+#testimonials h2{
+    color: var(--primary-color);
+    text-align: center;   
+}
+.test{
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    position: relative;
+    top: 0;
+}
+.test-1 img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+.test p{
+    color: var(--secondary-color);
+}
+
+/*/testimonials*/
+
 /*/main*/
 
 /*footer*/
@@ -168,6 +222,9 @@ footer{
 }
 #planning img{
     width: 100%;
+}
+.plan2{
+    margin: 20px 0 40px 0;
 }
 }
 /*/BONUS*/
