@@ -13,6 +13,7 @@
     --title-free:#fdc15f;
     --bg-footer:#333333;
     --color-text-dark:#000000;
+    --light-purple:#cecdf2;
 }   
 html{
     scroll-behavior: smooth;
@@ -213,7 +214,44 @@ main{
 #about-us h2, p{
     padding-bottom: 30px;
 }
-/*about us*/
+.text-purple{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+/*/about us*/
+
+/*call to action*/
+#call-to-action .upper{
+    padding-top: 30px;
+ text-transform: uppercase;
+ color: var(--light-purple);
+ 
+}
+#call-to-action h3{
+    padding: 0 0 20px 0;
+    color: var(--secondary-color);
+    
+}
+.call-started{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    display: inline-block;
+}
+
+.free{
+    font-weight: 700;
+    font-size: 3rem;
+    color: var(--title-free);
+}
+.privacy {
+    color: var(--secondary-color);
+}
+.under-line{
+    text-decoration: underline;
+}
+
+/*/call to action*/
 
 /*/main*/
 
