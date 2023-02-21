@@ -21,6 +21,9 @@ html{
 body{
     background-color: var(--secondary-color);
 }
+section{
+    scroll-margin-top: 80px;
+}
 ul{
     list-style: none;
 }
@@ -31,20 +34,20 @@ h3{
     padding: 35px 0;
     color: var(--color-blue);
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 p{
     font-weight: 400;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 2rem;
     color: var(--color-text-dark);
 }
 h4{
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     padding-top: 10px;
     color: var(--secondary-color);
 }
@@ -54,6 +57,12 @@ h4{
 /*Utility*/
 .container{
     padding: 20px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
 }
 
 .text-center{
@@ -70,6 +79,12 @@ h4{
 }
 .p-top-30{
     padding-top: 30px;
+}
+.p-t-r-l{
+    padding: 20px 20px 0 20px;
+}
+.p-all-20{
+    padding: 20px;
 }
 /*/Utility*/
 
@@ -110,12 +125,6 @@ main{
     border-radius: 20px;
     margin-bottom: 1.2rem;
 }
-.card-left{
-    width: 50%;
-}
-.card-right{
-    width: 50%;
-}
 .card-right img{
     display: block;
     width: 100%;
@@ -145,6 +154,8 @@ main{
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
+    padding: 7px;
+    margin-bottom: 20px;
 }
 .planning-text-white p, h2{
     color: var(--secondary-color);
@@ -160,6 +171,9 @@ main{
 }
 .plan2-text{
     color: var(--color-text-dark);
+}
+#planning img{
+    width: 100%;
 }
 /*/planning*/
 
@@ -191,6 +205,7 @@ main{
     color: var(--secondary-color);
 }
 /*/testimonials*/
+
 /*features*/
 #features h2{
     color: var(--secondary-color);
@@ -202,6 +217,7 @@ main{
 .box-features{
     background-color: var(--secondary-color);
     border-radius: 25px;
+    padding: 20px;
 }
 .features{
     background-color: #9792e4;
@@ -217,7 +233,7 @@ main{
 #about-us h2{
     color: var(--primary-color);
 }
-#about-us h2, p{
+#about-us h2, #about-us p{
     padding-bottom: 30px;
 }
 .text-purple{
@@ -283,51 +299,14 @@ footer span{
 /*/footer*/
 
 /*@media*/
-
-/*BONUS*/
-@media screen and (min-width:468px){
-        .container{
-        width: 100%;
-    }
-        .d-flex{
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-    }
-    .d-start{
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: flex-start;
-        
-    }
-    .p-t-r-l{
-    padding: 35px 35px 0 35px;
-}
-    .p-all-35{
-        padding: 35px;
-}
-.card-left{
-    width: 100%;
-}
-.card-right{
-    width: 100%;
-}
-#planning img{
-    width: 100%;
-}
-.plan2{
-    margin: 20px 0 40px 0;
-}
-}
-/*/BONUS*/
-
 @media screen and (min-width:768px){
     .container{
-    width: 100%;
+    max-width: 748px;
     }
     .d-flex{
         display: flex;
         flex-flow: row wrap;
+        justify-content: center;
         align-items: flex-start;
         gap: 10px;
     }
@@ -336,16 +315,16 @@ footer span{
     }
     #intro .card:first-child{
         width: calc((100% / 3 * 2) - 10px);
-        align-self: stretch;
 
     }
-    #intro .card:nth-child(2){
-        align-self: stretch;
-    }
+
     .card-right img{
     display: block;
     width: 50%;
-}
+    }
+    .a-self{
+        align-self: stretch;
+    }
     .card-about-us{
         width: calc((100% / 2) - 10px);
     }
@@ -356,10 +335,14 @@ footer span{
 
 @media  screen and (min-width:992px){
     .container{
-        width: 100%;
+        max-width: 942px;
     }
     header nav ul{
-        display: block;
+        display: flex;
+    }
+    header nav ul > li{
+        padding: 0 15px;
+
     }
     .fa-bars{
         display: none;
@@ -369,7 +352,7 @@ footer span{
 @media screen  and (min-width:1200px) {
     .container{
         margin: 0 auto;
-        max-width: 1200px;
+        max-width: 1000px;
     }
     .card-plan{
         width: calc((100% / 2) - 10px);
@@ -377,7 +360,7 @@ footer span{
     .d-flex{
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-start;
+        justify-content: center;        
         gap: 10px;
     }
     .self{
@@ -385,9 +368,6 @@ footer span{
     }
     .fa-bars{
         display: none;
-    }
-    header nav ul{
-        display: block;
     }
 
 }
