@@ -239,6 +239,20 @@ main{
     font-size: 1.5rem;
     color: var(--primary-color);
 }
+.card-rel{
+    position: relative;
+    top: 0;
+}
+.icon-pos{
+    position: absolute;
+    top: -20px;
+    left: 120px;
+    color: #9792e4;
+}
+.icon-size-about{
+    font-size: 120px;
+    
+}
 /*/about us*/
 
 /*call to action*/
@@ -379,12 +393,20 @@ footer a{
         display: none;
     }
     .plan2{
-        margin-top: 20%;
+        margin-top: 30%;
+
     }
     .p-50{
-        padding-top: 50%;
+        padding-top: 80%;
     }
-    .row-nowrap{
+    .p-10{
+        padding-top: 10%;
+        padding-right: 20px;
+    }
+    .w-50{
+        width: 50%;
+    }
+    .row-nowrap, .row-no-plan{
         display: flex;
         flex-flow: row nowrap;
        
