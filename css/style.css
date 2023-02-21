@@ -371,11 +371,29 @@ footer a{
         justify-content: center;        
         gap: 10px;
     }
-    .self{
-        margin-top:25%;
-    }
+    
     .fa-bars{
         display: none;
+    }
+
+    
+    .row-nowrap{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+ 
+    .p-left-right{
+        padding: 0 20px;
+    }
+  
+    .features-cards{
+        width: calc((100% / 3) - 10px);
+    }
+    .d-col{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
