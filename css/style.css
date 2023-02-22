@@ -408,10 +408,12 @@ footer a{
     .card-right img{
     display: block;
     width: 50%;
+
     }
     .a-self{
         align-self: stretch;
     }
+
     .row-nowrap{
         display: flex;
         flex-flow: row nowrap;
@@ -483,13 +485,19 @@ footer a{
     .w-50{
         width: 50%;
     }
-    .row-nowrap, .row-no-plan{
+    .row-nowrap, .row-no-plan, .flex-inner{
         display: flex;
         flex-flow: row nowrap;
        
     }
     .j-start{
         justify-content: flex-start;
+    }
+    .a-end{
+        align-self: flex-end;
+    }
+    .card-right img{
+        width: 80%;
     }
  
     .p-left-right{
@@ -504,6 +512,7 @@ footer a{
         flex-direction: column;
         align-items: center;
     }
+
 
 
 }
